@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div>
+        <p><a href="{% url 'news_list' %}">News</a></p>
+        <p><a href="{% url 'news_add' %}">Add news</a></p>
+{#        <p><a href="{% url 'news_edit' %}">Edit news</a></p>#}
+    </div>
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
